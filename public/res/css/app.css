@@ -1,0 +1,164 @@
+body {
+    background: #000000;
+    font-family: "Nunito", sans-serif;
+}
+
+.blurb h2 {
+   color: #EA1C2C;
+   font-weight: 100;
+   font-size: 2.5rem;
+}
+
+.blurb p {
+    color: white;
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+#mainNavbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+#mainNavbar .nav-link {
+    color: #EA1C2C;
+}
+
+
+#mainNavbar .nav-link:hover {
+    color: #C1C1C1;
+}
+
+
+.navbar-dark .navbar-brand {
+    color: #EA1C2C;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: #C1C1C1;
+}
+
+#headingGroup span {
+    color: #EA1C2C;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.navbar.scrolled {
+    background:  rgb(255,255,255);
+    transition: background  500ms;
+}
+
+.col-lg-6 .img-fluid {
+    width: 1760;
+    height: 1760;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
+
+.firstEntry{
+	border-left: 10px solid white;
+	padding-left: 15px;
+}
+
+.post{
+	margin-bottom: 20px;
+}
+
+#createPost{
+    margin-top: 35px;
+    align-items: center;
+}
+
+#formText {
+    color: #EA1C2C;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.25rem;
+}
+
+#blogMessage  {
+   color: #000000;
+   font-family: "Nunito", sans-serif;
+   font-size: 1.1rem;
+   max-width: 50rem;
+}
+
+#postDate{
+    font-size: 1rem;
+}
+
+#indexPage{
+    margin-top: 70px;
+}
+
+.jumbotron{
+    background-color: #000000;
+    border-bottom: #C1C1C1 2px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.jumbotron h2{
+	color: white;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.jumbotron p{
+	color: white;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#postCards{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#editButton {
+    margin-top: 20px; 
+    background-color: #EA1C2C; 
+    border: none;
+}
+
+#showButton{
+    width: 150px;
+}
+
+#showButton2{
+    width: 250px;
+}
+
+
+
