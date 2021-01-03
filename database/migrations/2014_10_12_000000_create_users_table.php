@@ -21,10 +21,6 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-        //    $table->bigIncrements('id');
-        //    $table->string('username');
-        //    $table->integer('generated_user_id');
-        //    $table->timestamps();
         });
     }
 

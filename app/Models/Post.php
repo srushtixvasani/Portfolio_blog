@@ -15,13 +15,6 @@ class Post extends Model
     protected $primaryKey = 'id';
     protected $fillable = ['title', 'slug', 'category_id', 'image', 'caption'];
 
-    // /*
-    // * Get the user that the post belongs to.
-    // */
-    // public function user(){
-
-    //     return $this->belongsTo('\App\Models\User');
-    // }
 
     public function category()
     {
