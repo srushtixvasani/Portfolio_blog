@@ -22,7 +22,7 @@ class PostController extends Controller
     public function index()
     {
         // pagination
-        $posts = Post::simplePaginate(8);
+        $posts = Post::simplePaginate(4);
         return view('posts.index', compact('posts'));
     }
 

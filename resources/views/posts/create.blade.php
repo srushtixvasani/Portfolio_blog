@@ -48,7 +48,6 @@
         <div class="form-group" id="formText">
         {{ Form::label('image', 'Upload an Image: ') }}
             <div>
-                
             {{ Form::file('image', ['class' => 'btn btn-danger']) }}
             </div>
         </div>

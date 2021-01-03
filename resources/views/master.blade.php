@@ -45,7 +45,6 @@
         </div>
         <div class="collapse navbar-collapse flex-grow-1 text-right" id="navLinks">
             <ul class="navbar-nav ml-auto flex-nowrap">
-
                 @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">

@@ -19,7 +19,6 @@
 
                         <!-- edited -->
                         <a class="card-text" >
-                            <i class="fas fa-user-alt " > </i> 
                             Posted by: 
                             @if(Auth::check())
                             {{ Auth::user()->name }}
@@ -66,6 +65,7 @@
             </div>    
             @endforeach
     </div> 
+
 
 </div>
 

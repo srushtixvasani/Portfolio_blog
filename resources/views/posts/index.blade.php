@@ -30,24 +30,15 @@
                     <div class="card-body">
 
                         <a class="card-text">
-                            <i class="fas fa-user-alt " > </i> 
                             Posted by: 
                             @if(Auth::check())
                             {{ Auth::user()->name }}
                             @endif
                         </a>
                                     
-    
                     </div>
 
-                    <ul class="list-group list-group-flush">
-
-                        <li class="list-group-item pb-0">              
-                            <p> 
-                                CAPTION: {{ substr(strip_tags($post -> caption), 0, 5000) }}
-                                {{ strlen(strip_tags($post -> caption)) > 50 ? "..." : "" }}  <!-- If more than 50 characters show ... -->
-                            </p>
-                        </li>
+                    <ul class="list-group list-group-flush"> 
 
                         <li class="list-group-item pb-0">
                         <p> Category: {{ $post->category->name }} </p> 
