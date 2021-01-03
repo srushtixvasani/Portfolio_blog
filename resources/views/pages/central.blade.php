@@ -1,7 +1,7 @@
 @extends ('master_app')
 
 @section('content')
-<div class="container-full-bg mr-3 ml-3"  id="indexPage">
+<div class="container-full-bg mr-3 ml-3 col-lg-12 col-md-12 col-sm-12 col-xs-12"  id="indexPage">
 	<div class="jumbotron">
 		<h2> PORTFOLIO </h2>
         <!-- <p> your posts</p> -->
@@ -17,23 +17,25 @@
                     </div>
                     <div class="card-body">
 
-
+                        <!-- edited -->
                         <a class="card-text" >
                             <i class="fas fa-user-alt " > </i> 
                             Posted by: 
-                            <!-- @if(Auth::check())
+                            @if(Auth::check())
                             {{ Auth::user()->name }}
-                            @endif -->
+                            @endif
                         </a>
                                         
-                        <p class="card-text"> 
-                            CAPTION: {{ substr(strip_tags($post -> caption), 0, 5000) }}
-                            {{ strlen(strip_tags($post -> caption)) > 50 ? "..." : "" }}  <!-- If more than 50 characters show ... -->
-                        </p>
                     
                     </div>
                                         
                     <ul class="list-group list-group-flush">
+                            <li class="list-group-item pb-0">
+                            <p> 
+                            CAPTION: {{ substr(strip_tags($post -> caption), 0, 5000) }}
+                            {{ strlen(strip_tags($post -> caption)) > 50 ? "..." : "" }}  <!-- If more than 50 characters show ... -->
+                            </p>
+                            </li>
                             <li class="list-group-item pb-0">
                             <p> Category: {{ $post->category->name }} </p> 
                             </li>

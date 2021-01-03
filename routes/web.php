@@ -16,28 +16,15 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // ROUTE TO LOGIN , REGISTER A USER TO OPEN BLOG APP
 Route::get('/', 'App\Http\Controllers\PagesController@index');
-
-// use full namespaces controller name
-
-// Route::get('/', 'App\Http\Controllers\SiteController@index');
 
 // ROUTES FOR SITE HOME PAGES WITH BLOG POSTS AND USER BLOG PAGE, ONCE USER HAS LOGGED IN.
 Route::get('contact', 'App\Http\Controllers\SiteController@contact');
 Route::post('contact', 'App\Http\Controllers\SiteController@contactfunc');
 Route::get('/home', ['uses' => 'App\Http\Controllers\SiteController@index', 'as' => 'pages.central']);
-// Route::get('logout', 'App\Http\Controllers\Auth\LoginController@logout')
-
-// Route::get('/portfolio-home', 'App\Http\Controllers\SiteController@index');
 
 Route::group(['middleware' => 'auth'], function()
 {

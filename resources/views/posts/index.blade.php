@@ -29,12 +29,12 @@
                     
                     <div class="card-body">
 
-                        <a class="card-text" href="{{ route('posts.index') }}">
+                        <a class="card-text">
                             <i class="fas fa-user-alt " > </i> 
                             Posted by: 
-                            <!-- @if(Auth::check())
+                            @if(Auth::check())
                             {{ Auth::user()->name }}
-                            @endif -->
+                            @endif
                         </a>
                                     
     
