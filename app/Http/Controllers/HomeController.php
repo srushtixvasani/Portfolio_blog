@@ -24,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        //pagination in portfolio page
         $posts = Post::simplePaginate(8);
         return view('pages.central', compact('posts'));
     }

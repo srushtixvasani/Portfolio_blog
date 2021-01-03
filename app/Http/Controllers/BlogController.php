@@ -7,11 +7,9 @@ use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
-    //
 
     public function comment($slug)
     {
-        // return $slug;
         $post = Post::where('slug','=', $slug)->first();
 
         return view('blog.comment', compact('post'));

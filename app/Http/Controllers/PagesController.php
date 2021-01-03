@@ -14,7 +14,7 @@ class PagesController extends Controller
      */
     public function index()
     {
-        //
+        // pagination in blog page
         $posts = Post::simplePaginate(8);
         return view('pages.main');
     }
